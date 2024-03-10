@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import json
 
 
-def get_date(**kwargs):
+def get_data(**kwargs):
     url = "https://raw.githubusercontent.com/airscholar/ApacheFlink-SalesAnalytics/main/output/new-output.csv"
     response = requests.get(url)
 
