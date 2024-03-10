@@ -55,13 +55,13 @@ dag = DAG(
 )
 
 get_data_from_url = PythonOperator(
-    task_id='get_data'
+    task_id='get_data',
     python_callable=get_data,
     dag=dag
 )
 
 preview_data_from_url = PythonOperator(
-    task_id='get_data'
+    task_id='get_data',
     python_callable=preview_data,
     dag=dag
 )
